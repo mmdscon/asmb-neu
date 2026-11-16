@@ -3,10 +3,10 @@ export type Option = { value: string; label: string; icon: string }
 export const Q1 = {
   title: 'Welche Anlage planen Sie?',
   options: [
-    { value: 'automatisierung-robotik', label: 'Automatisierung & Robotik', icon: 'Bot' },
+    { value: 'automatisierung', label: 'Automatisierung', icon: 'Cog' },
+    { value: 'robotik', label: 'Robotik', icon: 'Bot' },
     { value: 'foerdertechnik', label: 'Fördertechnik & Materialfluss', icon: 'Workflow' },
     { value: 'lebensmittelindustrie', label: 'Anlage für die Lebensmittelindustrie', icon: 'Utensils' },
-    { value: 'trennsiebanlage-sonder', label: 'Trennsieb- oder Sondermaschine', icon: 'Cog' },
   ] as Option[],
 }
 
