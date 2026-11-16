@@ -6,8 +6,8 @@ const LOGOS: [string | null, string][] = [
   ['supervac', 'Supervac'], ['popcorner', 'Popcorner'], ['zuckerlwerkstatt', 'Zuckerlwerkstatt'], ['edm', 'EDM'],
   ['veggiemeat', 'Veggie Meat'], ['kuchenpeter', 'Kuchen Peter'], ['arovit', 'Arovit'], ['koenig', 'König'],
   ['mars', 'Mars'], ['bioquelle', 'Bioquelle'], ['bertschlaska', 'Bertsch Laska'], ['heinzelpaper', 'Heinzel Paper'],
-  ['multivac', 'Multivac'], ['wienerberger.png', 'Wienerberger'], [null, 'Castelletto'], [null, 'Rittersport'], [null, 'Maba'],
-  [null, 'TSF-A'],
+  ['multivac', 'Multivac'], ['wienerberger.png', 'Wienerberger'], ['castelletto.png', 'Castelletto'], ['rittersport.png', 'Rittersport'], ['maba.png', 'Maba'],
+  ['tsfa.png', 'TSF-A'],
 ]
 
 export default function Marquee() {
