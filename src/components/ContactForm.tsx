@@ -34,7 +34,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={submit} className="space-y-5">
+    <form onSubmit={submit} className="space-y-6">
       <div>
         <label htmlFor="name" className="block font-bold mb-2">Name</label>
         <input id="name" required autoComplete="name" className="field" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
@@ -47,12 +47,12 @@ export default function ContactForm() {
         <label htmlFor="tel" className="block font-bold mb-2">Telefon</label>
         <input id="tel" type="tel" required autoComplete="tel" className="field" value={form.telefon} onChange={(e) => setForm({ ...form, telefon: e.target.value })} />
       </div>
-      <p className="text-sm text-stone-600">
+      <p className="text-sm text-gray-600">
         Informationen zur Übermittlung Ihrer Angaben finden Sie in den{' '}
         <a href="https://sut.at/datenschutz" target="_blank" rel="noopener noreferrer" className="underline">Datenschutzhinweisen</a>.
       </p>
       {state === 'error' && <p className="text-red-600 text-sm">Das hat leider nicht geklappt. Bitte versuchen Sie es erneut oder rufen Sie uns an: +43 2626 63951-0</p>}
-      <button className="btn btn-dark" disabled={state === 'loading'}>
+      <button className="btn" disabled={state === 'loading'}>
         {state === 'loading' ? 'Wird gesendet …' : <>Kostenlos anfragen <ArrowUpRight size={16} /></>}
       </button>
     </form>

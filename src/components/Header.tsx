@@ -1,16 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export default function Header({ cta = true }: { cta?: boolean }) {
   return (
-    <header className="wrap flex items-center justify-between py-4 md:py-6">
-      <Link href="/" aria-label="ASMB Startseite">
-        <Image src="/images/asmb.png" alt="ASMB Allg. Sondermaschinenbau" width={140} height={56} priority className="h-10 md:h-12 w-auto" />
-      </Link>
-      {cta && (
-        <Link href="/#quiz" className="btn btn-dark !py-3">Jetzt anfragen <ArrowUpRight size={16} /></Link>
-      )}
-    </header>
+    <>
+      <div className="bg-accent text-white text-center text-sm font-medium py-2 px-4">
+        Familiengeführt in 2. Generation: Ihr Partner im Sondermaschinenbau.
+      </div>
+      <header className="bg-white border-b border-[var(--border)]">
+        <div className="wrap flex items-center justify-between h-20">
+          <Link href="/" aria-label="ASMB Startseite">
+            <Image src="/images/asmb.png" alt="ASMB Allg. Sondermaschinenbau" width={140} height={56} priority className="h-12 w-auto" />
+          </Link>
+          {cta && <Link href="/#quiz" className="btn !py-2.5">Jetzt anfragen <ArrowRight size={16} /></Link>}
+        </div>
+      </header>
+    </>
   )
 }

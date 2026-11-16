@@ -1,10 +1,10 @@
 import { Check } from 'lucide-react'
 
-export default function Badges({ items, dark = true }: { items: string[]; dark?: boolean }) {
+export default function Badges({ items }: { items: string[] }) {
   return (
-    <ul className={`flex flex-wrap gap-2 ${dark ? 'text-white' : 'text-ink'}`}>
+    <ul className="flex flex-wrap gap-3">
       {items.map((t) => (
-        <li key={t} className={`badge ${dark ? '' : 'badge-dark'}`}><Check size={14} /> {t}</li>
+        <li key={t} className="badge"><Check size={14} /> {t}</li>
       ))}
     </ul>
   )
