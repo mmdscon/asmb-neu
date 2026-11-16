@@ -4,6 +4,7 @@ import { useEffect, useState, FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import { ArrowUpRight } from 'lucide-react'
 import { loadAnswers } from '@/lib/quiz'
+import { asset } from '@/lib/base'
 
 export default function ContactForm() {
   const router = useRouter()
@@ -20,10 +21,10 @@ export default function ContactForm() {
     e.preventDefault()
     setState('loading')
     try {
-      const res = await fetch('/api/lead', {
+      const res = await fetch(asset('/lead.php'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, ...loadAnswers(), page: location.href }),
+        body: JSON.stringify({ ...form, website: '', ...loadAnswers(), page: location.href }),
       })
       if (!res.ok) throw new Error()
       try { (window as any).fbq?.('track', 'Lead') } catch {}

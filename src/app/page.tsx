@@ -7,6 +7,7 @@ import Quiz from '@/components/Quiz'
 import Badges from '@/components/Badges'
 import Marquee from '@/components/Marquee'
 import { Q1 } from '@/lib/quiz'
+import { asset } from '@/lib/base'
 
 const VORTEILE = [
   { Icon: Ruler, t: 'Auf Maß gebaut', d: 'Individuell auf Ihre Anforderungen geplant' },
@@ -25,7 +26,7 @@ export default function Home() {
       <main>
         {/* Hero + Frage 1 */}
         <section id="quiz" className="relative bg-[#1a1a1a] overflow-hidden scroll-mt-0">
-          <video src="/images/asmb-hero-neu-3.mp4" poster="/images/asmb-hero1.jpg" autoPlay loop muted playsInline preload="metadata"
+          <video src={asset('/images/asmb-hero-neu-3.mp4')} poster={asset('/images/asmb-hero1.jpg')} autoPlay loop muted playsInline preload="metadata"
             className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/90" />
           <div className="relative wrap py-12 md:py-16">
@@ -68,7 +69,7 @@ export default function Home() {
                 <div className="mt-8"><Link href="#quiz" className="btn">Projekt besprechen <ArrowRight size={16} /></Link></div>
               </div>
               <div className="relative min-h-[300px] md:min-h-[460px] border-t md:border-t-0 md:border-l border-[var(--border)]">
-                <Image src="/images/neue2.jpg" alt="Roboter in der ASMB-Fertigung" fill sizes="(min-width:768px) 560px, 100vw" className="object-cover" />
+                <Image src={asset('/images/neue2.jpg')} alt="Roboter in der ASMB-Fertigung" fill sizes="(min-width:768px) 560px, 100vw" className="object-cover" />
               </div>
             </div>
           </div>
@@ -107,7 +108,7 @@ export default function Home() {
           <div className="wrap">
             <div className="card grid md:grid-cols-2">
               <div className="relative min-h-[300px] md:min-h-[440px]">
-                <Image src="/images/kernkompetenz.jpg" alt="ASMB-Team bei der Arbeit in der Fertigung" fill sizes="(min-width:768px) 560px, 100vw" className="object-cover" />
+                <Image src={asset('/images/kernkompetenz.jpg')} alt="ASMB-Team bei der Arbeit in der Fertigung" fill sizes="(min-width:768px) 560px, 100vw" className="object-cover" />
               </div>
               <div className="p-8 md:p-14 flex flex-col justify-center border-t md:border-t-0 md:border-l border-[var(--border)]">
                 <p className="eyebrow">Über uns</p>

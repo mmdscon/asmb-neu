@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react'
+import { asset } from '@/lib/base'
 
 const col = 'text-sm font-semibold uppercase tracking-[.14em] text-white mb-7'
 const link = 'text-gray-400 hover:text-accent transition-colors'
@@ -13,7 +14,7 @@ export default function Footer() {
       <div className="wrap pt-20 pb-16 md:pt-28 md:pb-20 grid gap-x-12 gap-y-14 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <div className="inline-block bg-white rounded-md px-3 py-2">
-            <Image src="/images/asmb.png" alt="ASMB Allg. Sondermaschinenbau" width={120} height={48} className="h-10 w-auto" />
+            <Image src={asset('/images/asmb.png')} alt="ASMB Allg. Sondermaschinenbau" width={120} height={48} className="h-10 w-auto" />
           </div>
           <p className="mt-8 max-w-xs leading-relaxed">
             Maßgeschneiderte Sondermaschinen aus Marz, Österreich. Vollständige Wertschöpfungskette aus einer Hand – familiengeführt in 2. Generation.

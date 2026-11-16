@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { asset } from '@/lib/base'
 
 // [Logo-Datei oder null, Name] – ohne Datei wird der Name als Schriftzug gezeigt
 const LOGOS: [string | null, string][] = [
@@ -18,7 +19,7 @@ export default function Marquee() {
         {row.map(([f, alt], i) => (
           <div key={i} className="bg-white border border-[var(--border)] w-44 h-24 flex items-center justify-center p-3 shrink-0">
             {f ? (
-              <Image src={`/images/referenz_${f.includes('.') ? f : f + '.jpg'}`} alt={alt} width={140} height={60} className="max-h-full w-auto object-contain" />
+              <Image src={asset(`/images/referenz_${f.includes('.') ? f : f + '.jpg'}`)} alt={alt} width={140} height={60} className="max-h-full w-auto object-contain" />
             ) : (
               <span className="text-lg font-bold uppercase tracking-wide text-[#4a4a4a]">{alt}</span>
             )}
