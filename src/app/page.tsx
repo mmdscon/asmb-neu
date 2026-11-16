@@ -29,7 +29,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/90" />
           <div className="relative wrap py-12 md:py-16">
-            <div className="max-w-4xl">
+            <div className="max-w-4xl rise">
               <h1 className="text-white font-bold uppercase tracking-wide leading-[1.05] text-[clamp(1.9rem,4.2vw,3.5rem)]">
                 Ihre nächste Anlage<br /><span className="text-accent font-black">individuell gebaut.</span>
               </h1>
@@ -55,7 +55,7 @@ export default function Home() {
         </section>
 
         {/* Kernkompetenz */}
-        <section className="section bg-white">
+        <section id="kompetenz" className="section bg-white scroll-mt-4">
           <div className="wrap">
             <div className="card grid md:grid-cols-2">
               <div className="p-8 md:p-14 flex flex-col justify-center">
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
 
         {/* Vorteile */}
-        <section className="section bg-[var(--gray)]">
+        <section id="vorteile" className="section bg-[var(--gray)] scroll-mt-4">
           <div className="wrap">
             <div className="max-w-2xl mb-12 md:mb-14">
               <p className="eyebrow">Ihre Vorteile</p>
@@ -94,7 +94,7 @@ export default function Home() {
         </section>
 
         {/* Referenzen */}
-        <section className="section bg-white">
+        <section id="referenzen" className="section bg-white scroll-mt-4">
           <div className="wrap mb-12 md:mb-14">
             <p className="eyebrow">Vertrauen</p>
             <h2 className="h2">Unsere Referenzkunden</h2>
@@ -103,7 +103,7 @@ export default function Home() {
         </section>
 
         {/* Über uns + CTA */}
-        <section className="section bg-[var(--gray)]">
+        <section id="ueber-uns" className="section bg-[var(--gray)] scroll-mt-4">
           <div className="wrap">
             <div className="card grid md:grid-cols-2">
               <div className="relative min-h-[300px] md:min-h-[440px]">

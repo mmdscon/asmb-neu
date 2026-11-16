@@ -15,7 +15,7 @@ export default function Kontakt() {
       <main>
         <Shell>
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            <div className="text-white">
+            <div className="text-white rise" style={{ ['--d' as string]: '60ms' }}>
               <Link href="/frage-2" className="inline-flex items-center gap-2 text-sm underline underline-offset-4 text-white/85 mb-8"><ArrowLeft size={14} /> Zurück zu Frage 2</Link>
               <p className="eyebrow">Letzter Schritt</p>
               <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-wide leading-[1.1]">Ihre Anlage <span className="text-accent">nimmt Form an.</span></h1>
@@ -24,7 +24,7 @@ export default function Kontakt() {
               </p>
               <div className="mt-8"><Badges items={['Persönliche Beratung', 'Unverbindlicher Erstkontakt', 'Probebetrieb auf 4.000 m²']} /></div>
             </div>
-            <div className="bg-white p-8 md:p-10 rounded-lg shadow-2xl">
+            <div className="bg-white p-8 md:p-10 rounded-lg shadow-2xl rise" style={{ ['--d' as string]: '200ms' }}>
               <h2 className="text-2xl md:text-3xl font-bold text-ink">Wie können wir Sie erreichen?</h2>
               <p className="text-gray-600 mt-3 mb-8">Wir melden uns persönlich, um einen gemeinsamen Erst-Termin auszumachen.</p>
               <ContactForm />
