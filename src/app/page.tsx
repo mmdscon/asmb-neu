@@ -29,14 +29,14 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/90" />
           <div className="relative wrap py-12 md:py-16">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl">
               <h1 className="text-white font-bold uppercase tracking-wide leading-[1.05] text-[clamp(1.9rem,4.2vw,3.5rem)]">
                 Ihre nächste Anlage<br /><span className="text-accent font-black">individuell gebaut.</span>
               </h1>
-              <p className="mt-5 text-lg text-white/80 max-w-2xl mx-auto">
+              <p className="mt-5 text-lg text-white/80 max-w-2xl">
                 Von der Planung bis zur Inbetriebnahme aus einer Hand – in zwei kurzen Fragen zur unverbindlichen Erstberatung.
               </p>
-              <div className="mt-6 flex justify-center"><Badges items={['Sondermaschinenbau', 'Maßgeschneiderte Lösungen', 'Kostenlose Erstberatung']} /></div>
+              <div className="mt-6"><Badges items={['Sondermaschinenbau', 'Maßgeschneiderte Lösungen', 'Kostenlose Erstberatung']} /></div>
             </div>
             <div className="mt-10 md:mt-12"><Quiz step={1} title={Q1.title} options={Q1.options} next="/frage-2" /></div>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="wrap">
             <div className="card grid md:grid-cols-2">
               <div className="relative min-h-[300px] md:min-h-[440px]">
-                <Image src="/images/asmb-titel.jpg" alt="Das ASMB-Team bei einer Auszeichnung" fill sizes="(min-width:768px) 560px, 100vw" className="object-cover" />
+                <Image src="/images/kernkompetenz.jpg" alt="ASMB-Team bei der Arbeit in der Fertigung" fill sizes="(min-width:768px) 560px, 100vw" className="object-cover" />
               </div>
               <div className="p-8 md:p-14 flex flex-col justify-center border-t md:border-t-0 md:border-l border-[var(--border)]">
                 <p className="eyebrow">Über uns</p>
